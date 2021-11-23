@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="id.css">
+    <title>Carte d'identité Kétonne</title>
+    <meta charset='UTF-8'>
+</head>
+
+<body>
+    <main>
+        <div id='preview'>
+            <div id='rectoDiv'>
+                <img src='img/carte-vierge-recto.png' id='recto'>
+                <canvas id='cvs' width="4500" height="3000"></canvas>
+            </div>
+
+            <div id='versoDiv' class='hide'>
+                <img src='img/carte-vierge-verso.png' id='verso'>
+                <canvas id='cvs2' width="4500" height="3000"></canvas>
+            </div>
+        </div>
+
+        <div>
+            <section id='info'>
+                <div id='cDiv'>
+                    <h5>CODE CITOYEN</h5>
+                    <button id='btnCodeCit'>GÉNÉRER</button>
+                    <h5 id='codeCit'></h5>
+                    <h5 id='nbAlea'></h5>
+                </div>
+
+                <div id='pDiv'>
+                    <h5>PRÉNOMS</h5>
+                    <input type="text" id='pnom0' name='pnom'>
+                    <input type="text" id='pnom1' name='pnom'>
+                    <input type="text" id='pnom2' name='pnom'>
+                    <input type="text" id='pnom3' name='pnom'>
+                </div>
+
+                <div>
+                    <h5>NOM</h5>
+                    <input type="text" id='nom'>
+                </div>
+
+                <div id='sDiv'>
+                    <h5>GENRE</h5>
+                    <section>
+                        <p>M</p>
+                        <input type="radio" name='genre' value='M' class='sSelect'>
+                    </section>
+                    <section>
+                        <p>F</p>
+                        <input type="radio" name='genre' value='F' class='sSelect'>
+                    </section>
+                    <section>
+                        <p>Autre</p>
+                        <input type="radio" name='genre' value='O' class='sSelect'>
+                    </section>
+                </div>
+
+                <div id='dDiv'>
+                    <h5>DATE DE NAISSANCE</h5>
+                    <div>
+                        <input type="text" id='jour' value='jj'>
+                        <p>/</p>
+                        <input type="text" id='mois' value='mm'>
+                        <p>/</p>
+                        <input type="text" id='annee' value='aaaa'>
+                    </div>
+                </div>
+
+                <div id='nDiv'>
+                    <h5>NATIONALITÉ</h5>
+                    <input type="text" id='natio'>
+                </div>
+
+                <div>
+                    <button id='specBtn'>BLEUE/ROUGE</button>
+                    <button id='rvBtn'>RECTO/VERSO</button>
+                    <button id='genImgBtn'>TÉLÉCHARGER</button>
+                </div>
+            </section>
+        </div>
+
+        <canvas id='dl-cvs' class='hide' height='6000' width='4500'></canvas>
+        
+        <div id='dlDiv' class='hide'>
+            <a id="link"></a>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="id.js"></script>
+</body>

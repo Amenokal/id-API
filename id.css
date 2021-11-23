@@ -1,0 +1,103 @@
+/* FONTS */
+
+@font-face {
+    font-family: OCRBRegular;
+    src: url("fonts/OCRB.ttf");
+}
+@font-face {
+    font-family: Bahnshrift;
+    src: url("fonts/Bahnschrift-Font-Family/BAHNSCHRIFT\ 1.ttf");
+}
+
+ /* FONTS */
+   /*---*/
+/* GLOBAL */
+
+* {
+    margin:0;
+    font-family: OCRBRegular;
+    vertical-align: center;
+}
+h5 {
+    text-align: center;
+    margin-bottom: 10%;text-decoration:
+    underline black;
+    letter-spacing: .2em;
+}
+input {
+    text-align: center;
+}
+button {
+    margin-bottom: 5%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+ /* GLOBAL */
+   /*---*/
+/* TOOLBAR */
+
+#info {
+    display:flex;
+    justify-content: space-evenly;
+    padding:1%;
+    background-color: rgb(219, 57, 42);
+}
+#info div {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#codeCit {text-decoration:none; margin-top: 1em;}
+
+#sDiv {width:20%;}
+#sDiv p {float: left;}
+#sDiv input {float:right;}
+
+#dDiv {width:20%;}
+#dDiv div {
+    flex-direction: row;
+    justify-content: center;
+    border:none;
+}
+#dDiv div input, #dDiv div p {margin-right:5px}
+#jour, #mois {
+    width:10%;
+    text-align: center;
+}
+#annee {
+    width:20%;
+    text-align: center;
+}
+
+/* TOOLBAR */
+   /*---*/
+/* DISPLAY */
+
+.hide {display:none;}
+#preview {
+    width:auto;
+    height:520px;
+    display: flex;
+    justify-content: center;
+}
+#recto, #verso {
+    width:750px;
+    height:500px;
+    position: absolute;
+}
+#cvs, #cvs2 {
+    position:relative;
+    width:750px;
+    height:500px;
+    top:0;
+}
+/* DISPLAY */
